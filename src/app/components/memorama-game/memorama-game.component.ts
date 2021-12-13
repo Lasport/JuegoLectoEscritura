@@ -7,9 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MemoramaGameComponent implements OnInit {
 
+
+
   constructor() { }
 
   ngOnInit(): void {
   }
 
 }
+
+
+
+export interface MemoramaGameComponent { imageId: string; state: 'default' | 'flipped' | 'matched'; }
+

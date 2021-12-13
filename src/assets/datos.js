@@ -35,7 +35,7 @@
         */
 
         //Crear ID de la sesión
-        doSend('{"id": 1, "jsonrpc": "2.0","method": "createSession","params": {"cortexToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcHBJZCI6ImNvbS50ZXNlLm5ldyIsImFwcFZlcnNpb24iOiIxLjAiLCJleHAiOjE2MzcxMjEzMzksIm5iZiI6MTYzNjg2MjEzOSwidXNlcklkIjoiY2ZkODJiZTctNmFjMi00MTNhLWJmY2EtOGZiM2ZlMmNiY2FlIiwidXNlcm5hbWUiOiJ0ZXNlIiwidmVyc2lvbiI6IjIuMCJ9.ZkR7eG3LqFD2OTBN4mPVzSzqIvykqOhg5/e5zGeovQs=", "headset": "EPOCX-E20206FB","status": "open"}}');
+        doSend('{"id": 1, "jsonrpc": "2.0","method": "createSession","params": {"cortexToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcHBJZCI6ImNvbS50ZXNlLm5ldyIsImFwcFZlcnNpb24iOiIxLjAiLCJleHAiOjE2Mzk1MzQ2OTksIm5iZiI6MTYzOTI3NTQ5OSwidXNlcklkIjoiY2ZkODJiZTctNmFjMi00MTNhLWJmY2EtOGZiM2ZlMmNiY2FlIiwidXNlcm5hbWUiOiJ0ZXNlIiwidmVyc2lvbiI6IjIuMCJ9.q7Z58zxeirkJPzfywf1Wlm0fgmpmAMGjI7s7455q2tw=", "headset": "EPOCX-E20206FB","status": "open"}}');
         //RESPUESTA: {"id":1,"jsonrpc":"2.0","result":{"appId":"com.tese.new","headset":{"connectedBy":"bluetooth","dongle":"0","firmware":"930","id":"INSIGHT-A1D204AE","isDfuMode":false,"isVirtual":false,"motionSensors":["Q0","Q1","Q2","Q3","ACCX","ACCY","ACCZ","MAGX","MAGY","MAGZ"],"sensors":["AF3","T7","Pz","T8","AF4"],"settings":{"eegRate":128,"eegRes":14,"memsRate":64,"memsRes":14,"mode":"INSIGHT"},"status":"connected","virtualHeadsetId":""},"id":"617ecb34-8a50-4c7f-bd78-aa94eccef869","license":"","owner":"tese","performanceMetrics":[{"apiName":"eng","displayedName":"Engagement","name":"engagement","shortDisplayedName":"En"},{"apiName":"exc","displayedName":"Excitement","name":"excitement","shortDisplayedName":"Ex"},{"apiName":"str","displayedName":"Stress","name":"stress","shortDisplayedName":"St"},{"apiName":"rel","displayedName":"Relaxation","name":"relaxation","shortDisplayedName":"Re"},{"apiName":"int","displayedName":"Interest","name":"interest","shortDisplayedName":"In"},{"apiName":"foc","displayedName":"Focus","name":"focus","shortDisplayedName":"Fo"}],"recordIds":[],"recording":false,"started":"2021-02-28T23:46:02.873-06:00","status":"opened","stopped":"","streams":[]}}
 
         //Suscripción
@@ -59,7 +59,7 @@
         if (sesion == "") {
             let response = JSON.parse(evt.data);
             sesion = response.result['id'];
-            doSend('{"id": 1,"jsonrpc": "2.0","method": "subscribe","params": {"cortexToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcHBJZCI6ImNvbS50ZXNlLm5ldyIsImFwcFZlcnNpb24iOiIxLjAiLCJleHAiOjE2MzcxMjEzMzksIm5iZiI6MTYzNjg2MjEzOSwidXNlcklkIjoiY2ZkODJiZTctNmFjMi00MTNhLWJmY2EtOGZiM2ZlMmNiY2FlIiwidXNlcm5hbWUiOiJ0ZXNlIiwidmVyc2lvbiI6IjIuMCJ9.ZkR7eG3LqFD2OTBN4mPVzSzqIvykqOhg5/e5zGeovQs=",    "session": "' + sesion + '","streams": ["pow"]}}');
+            doSend('{"id": 1,"jsonrpc": "2.0","method": "subscribe","params": {"cortexToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcHBJZCI6ImNvbS50ZXNlLm5ldyIsImFwcFZlcnNpb24iOiIxLjAiLCJleHAiOjE2Mzk1MzQ2OTksIm5iZiI6MTYzOTI3NTQ5OSwidXNlcklkIjoiY2ZkODJiZTctNmFjMi00MTNhLWJmY2EtOGZiM2ZlMmNiY2FlIiwidXNlcm5hbWUiOiJ0ZXNlIiwidmVyc2lvbiI6IjIuMCJ9.q7Z58zxeirkJPzfywf1Wlm0fgmpmAMGjI7s7455q2tw=",    "session": "' + sesion + '","streams": ["pow"]}}');
         }
         let response = JSON.parse(evt.data);
         theta.push(response.pow[1]);

@@ -3,9 +3,11 @@ import { BrowserModule } from '@angular/platform-browser';
 
 //Servicio
 
-import { LoadGraphService } from './load-graph.service'
+ import { LoadGraphService } from './load-graph.service'
 
 //
+
+//import { NgxChartsModule } from '@swimlane/ngx-charts';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -17,6 +19,7 @@ import { MemoramaGameComponent } from './components/memorama-game/memorama-game.
 import { LoginComponent } from './components/login/login.component';
 import { GraficaComponent } from './components/grafica/grafica.component';
 import { APP_ROUTING } from './app-routing.module';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -31,7 +34,8 @@ import { APP_ROUTING } from './app-routing.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    APP_ROUTING
+    APP_ROUTING,
+    //NgxChartsModule
   ],
   providers: [
     LoadGraphService

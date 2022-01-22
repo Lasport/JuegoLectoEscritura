@@ -19,6 +19,8 @@ import { MemoramaGameComponent } from './components/memorama-game/memorama-game.
 import { LoginComponent } from './components/login/login.component';
 import { GraficaComponent } from './components/grafica/grafica.component';
 import { APP_ROUTING } from './app-routing.module';
+import { NgChartsModule } from 'ng2-charts';
+
 
 @NgModule({
   declarations: [
@@ -35,6 +37,7 @@ import { APP_ROUTING } from './app-routing.module';
     BrowserModule,
     AppRoutingModule,
     APP_ROUTING,
+    NgChartsModule
     //NgxChartsModule
   ],
   providers: [

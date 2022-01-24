@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder } from '@angular/forms';
 import { AuthService } from './auth.service';
 import { Router} from '@angular/router';
-import router from '../../../../Api/src/routes/auth';
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',

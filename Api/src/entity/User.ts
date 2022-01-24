@@ -12,6 +12,7 @@ export class User {
 
     @Column()
     @MinLength(1)
+    @IsEmail()
     @IsNotEmpty()
     username: string;
 
@@ -19,7 +20,7 @@ export class User {
     @MinLength(6)
     @IsNotEmpty()
     password: string;
-
+    
     @Column()
     @IsNotEmpty()
     role: string;
@@ -27,7 +28,7 @@ export class User {
     @Column()
     @CreateDateColumn()
     createAt: Date;
-
+    
     @Column()
     @UpdateDateColumn()
     updateAt: Date;

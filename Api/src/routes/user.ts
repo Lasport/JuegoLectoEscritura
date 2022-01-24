@@ -12,12 +12,12 @@ router.get('/',[checkJwt], UserController.getAll);
 router.get('/:id',[checkJwt], UserController.getById);
 
 //create a new user
-router.post('/',[checkJwt], UserController.newUser);
+router.post('/',[checkJwt,checkRole(['admin'])], UserController.newUser);
 
 //edit user
 router.patch('/:id',[checkJwt], UserController.editUser);
 
-//Delete
+//Delete 
 router.delete('/:id',[checkJwt], UserController.deleteUser);
 
 export default router;

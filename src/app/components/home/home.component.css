@@ -1,0 +1,35 @@
+*{
+  font-family: 'Mochiy Pop P One', sans-serif;
+}
+
+.niños{
+    position: absolute;
+    top:15%;
+    left: 25%;
+    font-size: 28px;
+  }
+  .form-inline{
+    position: absolute;
+    top:15%;
+    left: 87%;
+    font-size: 30px;
+  }
+  .btn-outline-success{
+    color: #000000;
+  }
+  .form-inline2{
+    position: absolute;
+    top:15%;
+    left: 77%;
+    font-size: 30px;
+  }
+  .pie{
+    position: relative;
+    top: 590px;
+    left: 0px;
+  }
+  .footer {
+    height: 5rem;
+    background-color: #0a1af598;
+    text-align: center;
+  }

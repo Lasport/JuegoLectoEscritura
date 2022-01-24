@@ -1,11 +1,9 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import {HttpClientModule} from '@angular/common/http';
+//Service
 
-//Servicio
-
- import { LoadGraphService } from './load-graph.service'
-
-//
+import { LoadGraphService } from './load-graph.service';
 
 //import { NgxChartsModule } from '@swimlane/ngx-charts';
 
@@ -16,12 +14,13 @@ import { SelecGameComponent } from './components/selec-game/selec-game.component
 import { WritingGameComponent } from './components/writing-game/writing-game.component';
 import { IdentifyGameComponent } from './components/identify-game/identify-game.component';
 import { MemoramaGameComponent } from './components/memorama-game/memorama-game.component';
-import { LoginComponent } from './components/login/login.component';
+//|import { LoginComponent } from './components/login/login.component';
 import { GraficaComponent } from './components/grafica/grafica.component';
 import { APP_ROUTING } from './app-routing.module';
 import { NgChartsModule } from 'ng2-charts';
-
-
+import { ReactiveFormsModule } from '@angular/forms';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
@@ -30,14 +29,19 @@ import { NgChartsModule } from 'ng2-charts';
     WritingGameComponent,
     IdentifyGameComponent,
     MemoramaGameComponent,
-    LoginComponent,
-    GraficaComponent
+   // LoginComponent,
+    GraficaComponent,
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     APP_ROUTING,
-    NgChartsModule
+    NgChartsModule,
+    HttpClientModule,
+    ReactiveFormsModule,
+    BrowserAnimationsModule,
+    FormsModule
     //NgxChartsModule
   ],
   providers: [

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
+import { LoadGraphService } from 'src/app/load-graph.service';
 
 @Component({
   selector: 'app-memorama-game',
@@ -9,13 +11,14 @@ export class MemoramaGameComponent implements OnInit {
 
 
 
-  constructor() { }
+  constructor(private _loadScripts:LoadGraphService) {
+    _loadScripts.load(["memoramajs/g-cartas"]);
+   }
 
   ngOnInit(): void {
   }
 
 }
-
 
 
 export interface MemoramaGameComponent { imageId: string; state: 'default' | 'flipped' | 'matched'; }

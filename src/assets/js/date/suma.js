@@ -35,7 +35,6 @@ function cargaimagen() {
     botones.sort(function() {return Math.random() - 0.5});
     boton.innerHTML = botones;
 }
-
 function generarsum(){
     z = x + y;
     imgX= misImagenes[x];

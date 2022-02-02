@@ -1,0 +1,72 @@
+*{
+  font-family: 'Mochiy Pop P One', sans-serif;
+}
+.caja{
+    background-image: url("/assets/huella.png");
+    background-color: #57d362b9;
+    background-repeat:no-repeat;
+    width: 25%;
+    height: 25%;
+    background-size: 50px 50px;
+    background-position:center;
+    text-align: center;
+  }
+  
+  #juego {
+    width: 550px;
+    height: 550px;
+    position: relative;
+    top: 20px;
+    left: 700px;
+  }
+  
+  
+  table {
+    width: 100%;
+    height: 100%;
+  }
+  
+  td {
+    width: 25%;
+    height: 25%;
+    background-color: rgb(34, 45, 148);
+    border: 3px solid rgb(255, 255, 255);
+    border-radius: 5px;
+  }
+  
+  .letra {
+    color: black;
+    font-size: 40px;
+    text-align: center;
+    font-style: italic;
+  }
+  .btn{
+    position: absolute;
+    top: 500px;
+    left: 520px;
+    width: 10%;
+    height: 10%;
+    background-color: #57d362b9;
+  }
+  .btn-outline-success{ 
+    color: #000000;
+  }
+  .pie{
+    position: relative;
+    top: 100px;
+    left: 0px;
+  }
+  .footer {
+    height: 5rem;
+    background-color: #0a1af598;
+    text-align: center;
+  }
+
+
+
+  .reloj{
+    position: relative;
+    top: 10px;
+    left: 890px;
+    
+  }

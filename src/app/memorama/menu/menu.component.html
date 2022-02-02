@@ -1,0 +1,9 @@
+<div class="container">
+    <div class="consecutivo-menu">
+        <ul class="list-group">
+            <li *ngFor="let item of selec" class="list-group-item list-group-item-action list-group-item-danger" [routerLink]="[item.ruta]" routerLinkActive="active">
+                {{item.texto}}
+            </li>
+        </ul>
+    </div>
+</div>

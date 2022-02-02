@@ -1,0 +1,15 @@
+.text {
+    margin-top: 25px;
+    margin-left: 25px;
+}
+
+.container1 {
+    margin-top: 40px;
+    width: 50%;
+    position: relative;
+    left: 650px;
+}
+
+.graphi {
+    width: 90%;
+}

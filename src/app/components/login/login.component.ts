@@ -13,20 +13,21 @@ export class LoginComponent implements OnInit {
     password:[''],
   });
 
-  constructor(private authSvc:AuthService, private fb:FormBuilder,router:Router ) {}
+  constructor(private authSvc:AuthService, private fb:FormBuilder, private router:Router ) {}
 
   ngOnInit(): void {
-    const userData = {
+    /*const userData = {
       username:'garibo',
       password:'123456'
     };
-    this.authSvc.login(userData).subscribe((res) => console.log('Login'));
+    this.authSvc.login(userData).subscribe((res) => console.log('Login'));*/
   }
    onLogin():void{
      const formValue = this.loginForm.value;
-     this.authSvc.login(formValue).subscribe(res => {
+     this.authSvc.login(formValue).subscribe((res) => {
        if(res){
-       }
-     });
-   }
+         this.router.navigate(['selec-game']);
+      }
+    });
+  }
 }

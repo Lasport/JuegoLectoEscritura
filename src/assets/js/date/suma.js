@@ -116,8 +116,7 @@ function number(r){
     }else if(r==10){
         seleccionado=10;
         selec.innerHTML = misImagenes[seleccionado];
-    }
-    
+    }   
 }
 
 fin()

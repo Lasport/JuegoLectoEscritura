@@ -48,7 +48,6 @@ function separar() {
     var separado = workg.textContent.split("");
     game = [separado.join(",")];
     texto.textContent = game+` `+game[0];
-    
     //workg.innerHTML=(separado);
 }
 

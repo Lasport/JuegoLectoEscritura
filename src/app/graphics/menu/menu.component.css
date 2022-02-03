@@ -1,0 +1,10 @@
+.graphic {
+    width: 20%;
+    margin: 50px;
+    margin-left: 150px;
+    position: fixed;
+}
+
+.container {
+    position: fixed;
+}

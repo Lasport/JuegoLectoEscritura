@@ -1,0 +1,65 @@
+*{
+    font-family: 'Mochiy Pop P One', sans-serif;
+}
+
+.juego-titulo, .juego-info{
+    text-align: center;
+}
+.texto-encima1{
+    position: absolute;
+    top: 235px;
+    left: 130px;
+    background-color: #9acef8;
+    border-radius: 50px;
+}
+.gato{
+    position: absolute;
+    top: 45%;
+    left: 10%;
+    font-size: 28px;
+    border-radius: 100px;
+    
+
+
+  }
+  .texto-encima2{
+    position: absolute;
+    top: 235px;
+    left: 550px;
+    background-color: #9acef8;
+    border-radius: 50px;
+}
+.operaciones{
+    position: absolute;
+    top: 45%;
+    left: 40%;
+    font-size: 28px;
+}
+
+.texto-encima3{
+    position: absolute;
+    top: 235px;
+    left: 1000px;
+    background-color: #9acef8;
+    border-radius: 50px;
+}
+.memorama{
+    position: absolute;
+    top: 45%;
+    left: 69%;
+    font-size: 28px;
+    border-radius: 20px;
+
+}
+.pie{
+    position: relative;
+    top: 490px;
+    left: 0px;
+  }
+  .footer {
+    height: 5rem;
+    background-color: #0a1af598;
+    text-align: center;
+  }
+
+  

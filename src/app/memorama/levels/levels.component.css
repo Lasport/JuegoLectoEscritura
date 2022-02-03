@@ -1,0 +1,43 @@
+*{
+    font-family: 'Mochiy Pop P One', sans-serif;
+  }
+  .texto-encima1{
+    position: absolute;
+    top: 220px;
+    left: 840px;
+    background-color: #9acef8;
+    border-radius: 50px;
+}
+.instruccion{
+  
+    position: absolute;
+    top: 40%;
+    left: 53%;
+    font-size: 28px;
+    border-color: #0c0c0c;
+    border-width: 4px;
+    border-style: solid;
+}
+    .pie{
+      position: relative;
+      top: 600px;
+      left: 5px;
+    }
+    .footer {
+      height: 5rem;
+      background-color: #0a1af598;
+      text-align: center;
+    }
+
+
+    .form-inline{
+      position: absolute;
+      top: 58%;
+      left: 10%;
+      font-size: 30px;
+    }
+    .btn-outline-success{ 
+      color: #000000;
+      background-color: chartreuse;
+    }
+    

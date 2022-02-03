@@ -1,0 +1,73 @@
+*{
+  font-family: 'Mochiy Pop P One', sans-serif;
+}
+.example-parent {
+    border: 2px solid #070707;
+    color: black;
+    display: flex;
+    font-family: sans-serif;
+    font-weight: bold;
+  }
+  
+  .example-origin {
+    flex-basis: 100%;
+    flex-grow: 1;
+    padding: 10px;
+    position: relative;
+    top: 50px;
+    left: 600px;
+    
+  }
+  
+  .example-draggable {
+    background-color: #0a1af598;
+    font-weight: normal;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding: 10px;
+    float: left;
+    
+  }
+  
+  
+
+  .example-dropzone {
+    background-color: #0a1af598;
+    border: 2px solid #070707;
+    color: black;
+    flex-basis: 100%;
+    flex-grow: 1;
+    padding: 5px;
+    position: relative;
+    top: 50px;
+    left: 600px;
+    height: 130px;
+    width: 520px;
+  }
+
+  
+  .pie{
+    position: relative;
+    top: 350px;
+    left: 0px;
+  }
+  .footer {
+    height: 4rem;
+    background-color: #0a1af598;
+    text-align: center;
+  }
+  
+
+  .reloj{
+    position: relative;
+    top: 180px;
+    left: 250px;
+    
+  }
+
+
+ 
+  
+  .btn-outline-success{ 
+    color: #000000;
+  }

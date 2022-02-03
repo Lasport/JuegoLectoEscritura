@@ -15,6 +15,7 @@ import { WritingGameComponent } from './components/writing-game/writing-game.com
 import { IdentifyGameComponent } from './components/identify-game/identify-game.component';
 import { LoginComponent } from './components/login/login.component';
 import { APP_ROUTING } from './app-routing.module';
+import { SumaComponent } from './components/suma/suma.component';
 import { NgChartsModule } from 'ng2-charts';
 import { ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -30,6 +31,7 @@ import { DashboardComponent } from './components/dashboard/dashboard.component';
     WritingGameComponent,
     IdentifyGameComponent,
     LoginComponent,
+    SumaComponent,
     SumasComponent,
     HomeComponent,
     DashboardComponent

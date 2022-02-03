@@ -4,6 +4,7 @@ import { IdentifyGameComponent } from './components/identify-game/identify-game.
 import { LoginComponent } from './components/login/login.component';
 import { SelecGameComponent } from './components/selec-game/selec-game.component';
 import { WritingGameComponent } from './components/writing-game/writing-game.component';
+import { MemoryN1Component } from './memoryplay/memory-n1/memory-n1.component';
 import { GraphicsModule } from './graphics/graphics.module';
 import { SelecGraphicComponent } from './graphics/selec-graphic/selec-graphic.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
@@ -15,6 +16,13 @@ const APP_ROUTES: Routes = [
   { path:'selec-game', component: SelecGameComponent },
   { path:'writing-game', component: WritingGameComponent },
   { path:'identify-game', component: IdentifyGameComponent },
+  {path:'operation',
+  loadChildren:()=>import('./operation/operation.module').then(m=>m.OperationModule)},
+
+  { path: '**' , pathMatch: 'full', redirectTo:'selec-game'},
+
+  { path:'memory', component: MemoryN1Component,
+  loadChildren:()=> import('./memoryplay/memoryplay.module').then(m=>m.MemoryplayModule)},
   {  path:'selec-graphi',component: SelecGraphicComponent},
   { path:'suma', component: SumasComponent },
   { path:'dash', component: DashboardComponent },

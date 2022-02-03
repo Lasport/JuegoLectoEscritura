@@ -12,15 +12,6 @@ import { HomeComponent } from './components/home/home.component';
 import { SumasComponent } from './components/sumas/sumas.component';
 
 const APP_ROUTES: Routes = [
-  { path:'login', component: LoginComponent },
-  { path:'selec-game', component: SelecGameComponent },
-  { path:'writing-game', component: WritingGameComponent },
-  { path:'identify-game', component: IdentifyGameComponent },
-  {path:'operation',
-  loadChildren:()=>import('./operation/operation.module').then(m=>m.OperationModule)},
-
-  { path: '**' , pathMatch: 'full', redirectTo:'selec-game'},
-
   { path:'memory', component: MemoryN1Component,
   loadChildren:()=> import('./memoryplay/memoryplay.module').then(m=>m.MemoryplayModule)},
   {  path:'selec-graphi',component: SelecGraphicComponent},

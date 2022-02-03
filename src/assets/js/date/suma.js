@@ -59,7 +59,7 @@ function sum() {
         if (seleccionado == z) {
             resul.innerHTML = `<h1>Es correcto  <br>` +
                 imgX + ` <img src="./assets/symbol/sum.png" width="100" height="100"> ` +
-                imgY + ` es ` + imgZ + `</h1><button type="button" class="btn btn-success" onclick="generarsum()">Sigiente</button>`;
+                imgY + ` es ` + imgZ + `</h1><button type="button" class="btn btn-success" onclick="generarsum()">Siguiente</button>`;
             operacion.innerHTML = "";
             selec.innerHTML = [];
             x = Math.floor(Math.random() * 6);

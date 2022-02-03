@@ -38,7 +38,14 @@ function cargaimagen() {
 
 
 function generarsum(){
-    z = x - y;
+    if(x>y || y>x){
+        s = x - y;
+        z= s * -1;
+    }else {
+        s = x - y;
+        z= s * +1;
+    }
+    
     imgX= misImagenes[x];
     imgY= misImagenes[y];
     imgZ= misImagenes[z];
@@ -48,13 +55,13 @@ function generarsum(){
     +` <img src="./assets/symbol/result.png" width="100" height="100"> `
     +imgY
     +` <img src="./assets/symbol/same.png" width="100" height="100"> `
-    +`</h1>`);
+    +`</h1>`+z);
     resul.innerHTML=`<button type="button" class="btn btn-info" onclick="sum()">Enviar</button>`;
 }
 
 function sum() {
     generarsum()
-    
+
     if(seleccionado!==""){
 
         if(seleccionado==z){
@@ -69,7 +76,6 @@ function sum() {
             cargaimagen();
             aciertos++;
             fin();
-
         }else if(seleccionado !==z || seleccionado==""){
             resul.innerHTML = `<h4>Incorrecto</h4><br>
             <h6>Intenta de nuevo</h6> <div id="resul">

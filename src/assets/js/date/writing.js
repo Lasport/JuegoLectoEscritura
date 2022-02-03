@@ -13,6 +13,7 @@ var letters = new Array(
 );
 //cargar las letras
 var game = new Array();
+var escribirP = new Array();
 
 var works = new Array (
     {w:"pan", img:'<img src="./../../../assets/pan.png" width="150" height="150">'},
@@ -24,7 +25,7 @@ cargaletters()
 function cargaletters() {
     let abc = [];
     for(i=0;i<5;i++){
-        abc.push(`<button type="button" class="btn btn-outline-success" onclick="selec(${letters[i].id})">`+letters[i].img+`</button>`);
+        abc.push(`<button type="button" class="btn btn-outline-success" onclick="selec(${i})">`+letters[i].id+`</button>`);
     }
     abc.sort(function() {return Math.random() - 0.5});
     option.innerHTML = abc;
@@ -50,9 +51,12 @@ function separar() {
     texto.textContent = game+` `+game[0];
     //workg.innerHTML=(separado);
 }
+var cajaT=document.getElementById("cajaT");
 
 function selec(r) {
-    if(r==1){
-        
+    if(r==r){
+        escribirP=letters[r].img;
+        cajaT.innerHTML=(escribirP);
     }
+
 }

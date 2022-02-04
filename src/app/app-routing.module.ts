@@ -9,6 +9,7 @@ import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { HomeComponent } from './components/home/home.component';
 
 const APP_ROUTES: Routes = [
+<<<<<<< HEAD
   { path:'login', component: LoginComponent },
   { path:'writing-game', component: WritingGameComponent },
   { path:'identify-game', component: IdentifyGameComponent },
@@ -17,6 +18,10 @@ const APP_ROUTES: Routes = [
 
   { path: '**' , pathMatch: 'full', redirectTo:'selec-game'},
 
+=======
+  { path:'memory', component: MemoryN1Component,
+  loadChildren:()=> import('./memoryplay/memoryplay.module').then(m=>m.MemoryplayModule)},
+>>>>>>> Diana
   {  path:'selec-graphi',component: SelecGraphicComponent},
   { path:'dash', component: DashboardComponent },
   { path:'home', component: HomeComponent},

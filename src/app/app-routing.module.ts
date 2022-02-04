@@ -20,6 +20,7 @@ const APP_ROUTES: Routes = [
   {  path:'graphics',loadChildren:()=>import('./graphics/graphics.module').then(m => m.GraphicsModule)},
   {  path:'consecutivo', loadChildren:()=>import('./concecutivo/concecutivo.module').then(m=>m.ConcecutivoModule)},
   {  path:'memorama' , loadChildren:()=>import('./memorama/memorama.module').then(m=>m.MemoramaModule)},
+  {  path:'operation', loadChildren:()=>import('./operation/operation.module').then(m=>m.OperationModule)},
   { path: '**', pathMatch: 'full', redirectTo:'home'},
 
 ];

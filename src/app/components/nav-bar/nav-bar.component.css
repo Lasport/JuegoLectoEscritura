@@ -51,3 +51,7 @@
     background-color: #000000;
     text-align: center;
 }
+
+#imgNav:hover{
+    background-color: #4a55f098;
+}

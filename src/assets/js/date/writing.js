@@ -51,7 +51,7 @@ function separar() {
     texto.textContent = game+` `+game[0];
     //workg.innerHTML=(separado);
 }
-var cajaT=document.getElementById("cajaT");
+var caja1=document.getElementById("caja1");
 function selec(r) {
     if(r==r){
         escribirP=letters[r].img;

@@ -4,7 +4,7 @@
 
 .navbar-brand {
     position: relative;
-    top: 0px;
+    top: 10px;
     left: 0px;
 }
 
@@ -17,8 +17,8 @@
 
 .form-inline {
     position: absolute;
-    top: 9%;
-    left: 87%;
+    top: 20%;
+    left: 85%;
     font-size: 30px;
 }
 
@@ -28,7 +28,14 @@
 
 .form-inline2 {
     position: absolute;
-    top: 9%;
+    top: 20%;
+    left: 65%;
+    font-size: 30px;
+}
+
+.form-inline3 {
+    position: absolute;
+    top: 20%;
     left: 75%;
     font-size: 30px;
 }

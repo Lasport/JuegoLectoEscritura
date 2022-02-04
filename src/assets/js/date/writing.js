@@ -52,11 +52,10 @@ function separar() {
     //workg.innerHTML=(separado);
 }
 var cajaT=document.getElementById("cajaT");
-
 function selec(r) {
     if(r==r){
         escribirP=letters[r].img;
         cajaT.innerHTML=(escribirP);
+        cajaT
     }
-
 }
